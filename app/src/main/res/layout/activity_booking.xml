@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uibooking"
+    tools:context=".BookingActivity">
+
+    <TextView
+        android:layout_marginTop="320px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="FORM PEMESANAN ANTRIAN"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="50px"
+        ></TextView>
+
+    <EditText
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="70px"
+        android:textColorHighlight="@color/black"
+        android:hint="Nama" />
+    <EditText
+        android:id="@+id/tv_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="70px"
+        android:textColorHighlight="@color/black"
+        android:hint="No HP" />
+    <EditText
+        android:id="@+id/tv_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="70px"
+        android:textColorHighlight="@color/black"
+        android:hint="Tanggal" />
+
+    <!-- Text Label -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="Pilih BarberMan:"
+        android:layout_marginHorizontal="80px"
+        android:textSize="47px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem"
+        android:entries="@array/barberman"
+        android:layout_marginHorizontal="80px"
+        android:theme="@style/Spinner"
+        android:padding="15dp">
+    </androidx.appcompat.widget.AppCompatSpinner>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10px"
+        android:text="Jenis Service:"
+        android:layout_marginHorizontal="80px"
+        android:textSize="47px"
+        android:textColor="@color/black"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Spinner Element -->
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listItem2"
+        android:entries="@array/service"
+        android:layout_marginHorizontal="80px"
+        android:theme="@style/Spinner"
+        android:padding="15dp">
+    </androidx.appcompat.widget.AppCompatSpinner>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metode Pembayaran:"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="80px"
+        android:textSize="47px"
+        android:layout_marginBottom="15px"
+        ></TextView>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="80px"
+        android:layout_marginBottom="50px"
+        >
+        <RadioButton android:id="@+id/radio_gopay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gopay"
+            android:textColor="@color/black"
+            />
+        <RadioButton android:id="@+id/radio_dana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dana"
+            android:textColor="@color/black"/>
+        <RadioButton android:id="@+id/radio_ovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OVO"
+            android:textColor="@color/black"/>
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70px"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/rounded_corner"
+        android:text="Book"/>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/uibill"
+    android:layout_margin="20px"
+    android:paddingHorizontal="50px"
+    android:gravity="center"
+    tools:context=".BillActivity" >
+
+    <TextView
+        android:id="@+id/textViewliat1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/textViewliat2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_alignRight="@+id/textViewliat1"
+        android:layout_below="@+id/textViewliat1"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:text="Menunggu Konfirmasi" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_alignBaseline="@+id/textViewliat2"
+        android:layout_alignBottom="@+id/textViewliat2"
+        android:layout_alignLeft="@+id/TextView01"
+        android:text="Status Pembayaran" />
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_above="@+id/textViewliat2"
+        android:layout_alignParentLeft="true"
+        android:text="Nomor Antrian" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextView02"
+        android:layout_alignLeft="@+id/TextView02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="78dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Close" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/uilogin"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:layout_marginTop="700px"
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="70px"
+        android:textColorHighlight="@color/black"
+        android:hint="Email" />
+
+        <EditText
+            android:id="@+id/tv_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_marginBottom="50px"
+            android:inputType="textPassword"
+            android:layout_marginHorizontal="70px"
+            android:hint="Password" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="70px"
+        android:layout_marginBottom="10px"
+        android:background="@drawable/rounded_corner"
+        android:text="Masuk" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_daftar"
+        android:layout_marginHorizontal="70px"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50px"
+        android:background="@drawable/rounded_corner"
+        android:layout_height="wrap_content"
+        android:text="Daftar" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="*Klik DAFTAR apabila belum punya akun"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        ></TextView>
+
+</LinearLayout>

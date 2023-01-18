@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "724260678732",
+    "project_id": "hanzbarbershop-c3b0f",
+    "storage_bucket": "hanzbarbershop-c3b0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:724260678732:android:31ca99231705e6f135d8e9",
+        "android_client_info": {
+          "package_name": "com.example.responsi_kuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "724260678732-4tldic7g9g9s96r1fe5kjactiht4sh9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfkiqJ3pF18z1RTVtYEAeShRiW2KIKm34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "724260678732-4tldic7g9g9s96r1fe5kjactiht4sh9n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
